@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина (Рина) Акбашева](https://up.htmlacademy.ru/htmlcss/35/user/2180395).
-* Наставник: [Сергей Зубов] (https://up.htmlacademy.ru/htmlcss/35/user/208340).
+* Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/35/user/208340).
 
 ---
 
