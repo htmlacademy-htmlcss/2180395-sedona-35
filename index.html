@@ -4,20 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <!-- Главная страница все описание страницы полностью с шапкой и подвалом-->
   <!-- Frame 26 - рамка всей страницы - чуть меньше главной страницы -->
   <!-- Group 23 - в нее включены Header & Hero-->
   <body>
     <header class="page-header">
-      <img src="logo.png">
+      <img src="logo.png" alt="Логотип Седоны.">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">Главная</a>
             <a class="navigation-link" href="history.html">О Седоне</a>
-            <a class="navigation-link" href="catalog hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -56,6 +57,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -94,14 +96,47 @@
           </ul>
           <a class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <section>
-
+      <section class="newsletter">
+        <h4 class="page-main-title">Подпишитесь на рассылку</h4>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"></form>
+        <label for="newsletter-email">Email</label>
+        <input class="field" placeholder="email@example.com" type="email"
+        name="newsletter-email" id="newsletter-email" reguired>
+        <button class="button newsletter-button" type="submit"></button>
+          <span class="visually-hidden">Отправить</span>
       </section>
     </main>
-    <footer class="main-footer">
-      <!-- Подвал сайта -->
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="page-footer-title">Давайте дружить</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">ЮТюб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <p>+7 (812) 812-12-12</p>
+      </section>
+      <section class="footer-htmlacademy">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      </section>
+
     </footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
 
   </body>
 </html>
