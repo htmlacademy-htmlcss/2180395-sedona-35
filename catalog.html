@@ -71,21 +71,18 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>
-
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking-space" checked>
-
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="Wi-Fi">
-
                   Wi-Fi
                 </label>
               </li>
@@ -98,38 +95,33 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="motel">
-
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-
                   Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
 
+          <p class="cost">Стоимость, ₽:</p>
           <button class="button" type="submit">Применить</button>
-          <button class="button-reset" type="submit">Сбросить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
         </form>
-
       </section>
 
       <section class="catalog-hotels">
-        <p>Найдено гостиниц: <span>38</span></p>
-
+        <p class="catalog-hotels-found">Найдено гостиниц: <span>38</span></p>
         <select class="select-control" aria-label="Сортировка">
-
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
@@ -154,11 +146,10 @@
             <span class="hotel-name">Гостиница</span>
             <b class="hotel-card-price">От 4000 ₽</b>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="hotel-card-button button-basket" type="submit">в избранное</button>
-            <span class="visually-hidden">Количество звезд гостиницы</span>
+            <button class="hotel-card-button button-basket" type="button">в избранное</button>
+            <p class="rating"><span class="visually-hidden">Количество звёзд гостиницы: четыре</span></p>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
-
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" width="300" height="212" src="images/mountain-rainbow.jpg" alt="Радуга над горами.">
@@ -167,11 +158,10 @@
             <span class="hotel-name">Гостиница</span>
             <b class="hotel-card-price">От 5000 ₽</b>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="hotel-card-button button-basket" type="submit">в избранное</button>
-            <span class="visually-hidden">Количество звезд гостиницы</span>
+            <button class="hotel-card-button button-basket" type="button">в избранное</button>
+            <p class="rating"><span class="visually-hidden">Количество звёзд гостиницы: четыре</span></p>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
-
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" width="300" height="212" src="images/big-mountain-day.jpg" alt="Великолепные горы.">
@@ -180,11 +170,10 @@
             <span class="hotel-name">Гостиница</span>
             <b class="hotel-card-price">От 2500 ₽</b>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="hotel-card-button button-basket" type="submit">в избранное</button>
-            <span class="visually-hidden">Количество звезд гостиницы</span>
+            <button class="hotel-card-button button-basket" type="button">в избранное</button>
+            <p class="rating"><span class="visually-hidden">Количество звёзд гостиницы: три</span></p>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
-
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" width="300" height="212" src="images/mountains-at-night.jpg" alt="Ночное небо в горах.">
@@ -193,15 +182,15 @@
             <span class="hotel-name">Гостиница</span>
             <b class="hotel-card-price">От 1500 ₽</b>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="hotel-card-button button-basket" type="submit">в избранное</button>
-            <span class="visually-hidden">Количество звезд гостиницы</span>
+            <button class="hotel-card-button button-basket" type="button">в избранное</button>
+            <p class="rating"><span class="visually-hidden">Количество звёзд гостиницы: две</span></p>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
