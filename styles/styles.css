@@ -30,17 +30,14 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
+  background: #82B3D3;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 }
 
 /* Pages */
-.page-header {
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -57,7 +54,7 @@ body {
   font-weight: 700;
   text-align: center;
   list-style: none;
-  color: #000000;
+  color: inherit;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -69,24 +66,20 @@ body {
   background: #756157;
   border: none;
   border-radius: 4px;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 50px;
 }
 
+/* main */
 .main-index {
   text-align: center;
 }
 
 .hero {
-  height: 485px;
   background-image: url("../images/mountain-background.jpg");
   background-color: #333333;
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-
-.advantages-main {
-  height: 282px;
 }
 
 .advantages-main-title {
@@ -100,7 +93,9 @@ body {
   line-height: 26px;
   color: #333333;
 }
-
+.advantages-item {
+  color: #333333;
+}
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -108,15 +103,8 @@ body {
   margin-bottom: 0;
 }
 
-/*  здесь нужно проработать преимущества и сервис*/
-
 .advantages-item-image {
   display: block;
-  background-position: 100% 100%;
-}
-
-.service-icon {
-  text-align: center;
 }
 
 .blue-fone {
@@ -172,11 +160,10 @@ body {
   height: 52px;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
   background: #756157;
   border: none;
   border-radius: 4px;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 50px;
 }
 /*newsletter*/
 .newsletter {
@@ -193,14 +180,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .field {
@@ -212,7 +197,7 @@ body {
   border: none;
   font-family: inherit;
   border-radius: 4px;
-  padding: 12px 20px 12px 20px;
+  padding: 12px 20px;
 }
 
 .newsletter-button {
@@ -220,15 +205,14 @@ body {
   height: 52px;
   font-size: 20px;
   line-height: 36px;
-
-  background: #82B3D3;
   border: none;
   border-radius: 4px;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 50px;
 }
 
 .footer-social a {
   color: #83B3D3;
+  background: none;
 }
 
 .footer-contacts a {
@@ -239,10 +223,6 @@ body {
 }
 
 /*catalog*/
-.main-inner {
-  background-color: #FFFFFF;
-}
-
 .main-sorting-catalog {
   background-image: url("../images/sorting-background.jpg");
   background-color: #F2F2F2;
@@ -259,12 +239,8 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
-  color: #FFFFFF;
+  color: inherit;
   text-decoration: none;
-}
-
-.control-input {
-  list-style: none;
 }
 
 .catalog-filter-title {
@@ -277,6 +253,20 @@ body {
   line-height: 23px;
 }
 
+.catalog-button-submit {
+  width: 191px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.catalog-button-reset {
+  background: none;
+  border: none;
+}
+
+/*select-hotels*/
 .select-hotels-found {
   font-size: 30px;
   line-height: 36px;
@@ -290,47 +280,20 @@ body {
   line-height: 21px;
 }
 
-.catalog-button {
-  width: 191px;
-  height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #82B3D3;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 50px 8px 50px;
-}
-
-.catalog-button-reset {
-  width: 191px;
-  height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: none;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 50px 8px 50px;
-}
-
-.button-sorting {
-  color: #000000;
-  text-decoration: none;
-}
-
 /*hotel-card*/
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .hotel-card {
   display: inline-block;
-  width: 340px;
-  height: 438px;
-  border: 1px #E6E6E6;
-  border-radius: 4px;
-  list-style: none;
+  width: 33%;
+}
+
+.hotel-card-link {
+  text-decoration: none;
 }
 
 .hotel-card-title {
@@ -338,7 +301,6 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
 }
 
 .hotel-name {
@@ -346,37 +308,14 @@ body {
 }
 
 .hotel-card-price {
-  font-weight: 400;
   color: #333333;
 }
 
 .hotel-card-button {
-  width: 140px;
-  height: 36px;
   background: #756157;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 50px 8px 50px;
 }
 
-.button-basket {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-  background: #82B3D3;
-
-}
-
-.button-basket-pressed {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
+.button-green {
   background: #7DB54F;
 }
 
@@ -385,7 +324,15 @@ body {
   height: 17px;
   background-image: url("../images/star.svg");
   background-size: 18px 17px;
-  background-repeat: x;
+  background-repeat: repeat-x;
+}
+
+.rating-star-three {
+  width: 54px;
+}
+
+.rating-star-two {
+  width: 36px;
 }
 
 .hotel-rating {
@@ -393,15 +340,15 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
+  background: #F2F2F2;
 }
 
-.pagination {
+/*pagination*/
+.pagination-item {
   display: inline-block;
-  height: 60px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  list-style: none;
 }
 
 .pagination-link {
@@ -410,26 +357,19 @@ body {
   text-decoration: none;
 }
 
-.pagination-current {
+.pagination-link-next {
   color: #000000;
-  background-color: #F2F2F2;
+  text-decoration: none;
 }
 
-.newsletter-page {
-  background-image: none;
-}
-
-.newsletter-title-page {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
+.newsletter {
   text-align: center;
-  text-transform: uppercase;
 }
 
-.newsletter-description-page {
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-  text-align: center;
+.newsletter-title {
+
+}
+
+.newsletter-description {
+
 }
