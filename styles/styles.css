@@ -15,14 +15,21 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  margin: 0 auto;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .button {
@@ -37,7 +44,35 @@ body {
   border: none;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
+}
+
 /* Pages */
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+}
+
+.navigation-list {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.menu-list {
+  max-width: 370px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -70,8 +105,17 @@ body {
 }
 
 /* main */
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -138,10 +182,6 @@ body {
 }
 
 /*search*/
-.search {
-  height: 406px;
-}
-
 .search-title {
   font-size: 30px;
   line-height: 36px;
@@ -167,9 +207,9 @@ body {
 }
 /*newsletter*/
 .newsletter {
-  height: 415px;
   background-image: url("../images/bridge.jpg");
   color: #FFFFFF;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: 100% 100%;
@@ -210,9 +250,29 @@ body {
   padding: 8px 50px;
 }
 
+/*page-footer*/
+.footer-container {
+  display: flex;
+  width: 1060px;
+  margin-left: 47px;
+  margin-right: 93px;
+  margin-top: 61px;
+  margin-bottom: 10px;
+  padding: 5px;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .footer-social a {
-  color: #83B3D3;
   background: none;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts {
+  width: 351px;
 }
 
 .footer-contacts a {
@@ -220,6 +280,10 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration-line: none;
+}
+
+.footer-htmlacademy {
+  width: 115px;
 }
 
 /*catalog*/
@@ -362,14 +426,8 @@ body {
   text-decoration: none;
 }
 
-.newsletter {
-  text-align: center;
-}
-
-.newsletter-title {
-
-}
-
-.newsletter-description {
-
+.page-mailing {
+  background-image: none;
+  background-color: #FFFFFF;
+  color: #000000;
 }
