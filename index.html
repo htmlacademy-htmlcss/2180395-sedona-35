@@ -31,7 +31,8 @@
             <li class="menu-item">
               <a class="menu-link" href="#">
                 <img class="menu-link-search" width="20" height="20" src="images/search.svg" alt="Поиск.">
-                <span class="visually-hidden">
+                <!--временно добавлен hidden-->
+                <span class="visually-hidden" hidden>
                   Поиск
                 </span>
               </a>
@@ -39,7 +40,8 @@
             <li class="menu-item">
               <a class="menu-link" href="#">
                 <img class="menu-link-heart" width="20" height="20" src="images/heart.svg" alt="Избранное.">
-                <span class="visually-hidden">
+                <!--временно добавлен hidden-->
+                <span class="visually-hidden" hidden>
                   Избранное
                 </span>
               </a>
@@ -67,25 +69,29 @@
             <p class="advantages-main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             <ul class="advantages-list">
               <li class="advantages-item blue-fone">
-                <h3 class="advantages-title">Настоящий<br> городок</h3>
-                <p class="advantages-description">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+                <div class="town-container">
+                  <h3 class="advantages-title">Настоящий<br> городок</h3>
+                  <p class="advantages-description">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+                </div>
                 <img class="advantages-item-image" src="images/shtetl-architecture.jpg" width="800" height="384" alt="Фото городка.">
               </li>
-              <li class="advantages-item paleblue-fone">
+              <li class="advantages-item list-item paleblue-fone">
                 <h3 class="advantages-title black-text">Небольшая<br> площадь</h3>
                 <p class="advantages-description">Все достопримечательности<br> находятся очень близко</p>
               </li>
-              <li class="advantages-item lightblue-fone">
+              <li class="advantages-item list-item lightblue-fone">
                 <h3 class="advantages-title black-text">Красивая<br> дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
               </li>
-              <li class="advantages-item paleblue-fone">
+              <li class="advantages-item list-item paleblue-fone">
                 <h3 class="advantages-title black-text">Мало<br> туристов</h3>
                 <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
               </li>
-              <li class="advantages-item blue-fone">
-                <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
-                <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+              <li class="advantages-item blue-fone devils-bridge">
+                <div class="town-container">
+                  <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
+                  <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+                </div>
                 <img class="advantages-item-image" src="images/devils-bridge.jpg" width="800" height="384" alt="Фото мост дьявола.">
               </li>
             </ul>
