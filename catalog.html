@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -49,7 +50,7 @@
               </a>
             </li>
             <li class="menu-item menu-item-button">
-              <a class="button login-button" href="#">
+              <a class="button menu-login-button" href="#">
                 Хочу сюда!
               </a>
             </li>
@@ -66,14 +67,15 @@
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
                     <span class="visually-hidden">Главная</span>
-                    <svg aria-hidden="true" focusable="false" width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff"/>
+                    <svg aria-hidden="true" focusable="false" width="13" height="15" viewbox="0 0 13 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                      <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
                     </svg>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <svg aria-hidden="true" focusable="false" width="8" height="21" viewbox="0 0 8 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.92 9.97 2.17 5.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z" fill="#fff"/>
+                  <svg aria-hidden="true" focusable="false" width="8" height="21" viewbox="0 0 8 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.92 9.97 2.17 5.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"/>
                   </svg>
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
@@ -231,7 +233,7 @@
               </li>
             </ul>
 
-            <ul class="pagination clear-list">
+            <ol class="pagination clear-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-link-current">1</a>
               </li>
@@ -248,9 +250,9 @@
                 <a class="pagination-link pagination-link-next" href="#">...</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
+                <a class="pagination-link pagination-link-prev" href="#">10</a>
               </li>
-            </ul>
+            </ol>
           </section>
 
           <section class="newsletter newsletter-page-mailing">
