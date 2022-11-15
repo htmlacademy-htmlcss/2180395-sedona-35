@@ -84,6 +84,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .clear-list {
@@ -160,7 +161,10 @@ body {
 
 .menu-link {
   display: flex;
-  padding: 22px 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 3px;
+  /*padding: 1px 12px;*/
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -176,16 +180,25 @@ body {
   min-height: 20px;
 }
 
-.menu-list .menu-item-heart::before {
-  position: absolute;
-  top: 16px;
-  /*left: 10px;*/
-  /*right: 336px;*/
+.menu-list .menu-link-heart::before {
+  position: relative;
+  top: -11px;
+  left: 29px;
   width: 20px;
   height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
   content: "";
+}
+
+.menu-list .menu-favourites {
+  position: relative;
+  top: -6px;
+  right: 7px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+
 }
 
 .menu-login-button {
@@ -600,181 +613,6 @@ body {
   outline-color: #68A2CA;
  }
 
- /*modal-container*/
- .modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
-}
-
-.modal {
-  position: relative;
-  margin: auto;
-  padding: 64px 70px;
-  background-color: #FFFFFF;
-  border-radius: 25px;
-}
-
-.modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 81px;
-  right: 68px;
-  width: 14px;
-  height: 14px;
-  /*background-color: #FFFFFF;*/
-  border: none;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.modal-close-button::before {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 52px;
-  height: 52px;
-  background-color: #F2F2F2;
-  border-radius: 50%;
-  content: "";
-}
-
-.modal-title {
-  margin: 0;
-  margin-bottom: 64px;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.field-group {
-  margin: 0;
-  margin-bottom: 48px;
-}
-
-.modal-form {
-  display: grid;
-  grid-template-columns: 247px 242px;
-  column-gap: 88px;
-}
-
-.modal-form-date {
-  grid-column: 1 / -1;
-}
-
-.modal-form-humans {
-  display: flex;
-}
-
-.modal-date {
-  /*width: 440px;*/
-}
-
-.real-date {
-  grid-column: 1 / -1;
-  margin: 0;
-
-}
-
-.form-label,
-.modal-submit {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  /*margin-right: 24px;*/
-}
-
-.real-date,
-.free-room,
-.children {
-  font-size: 16px;
-}
-
-.real-date {
-  color: #FF5757;
-}
-
-.form-label-icon {
-  position: relative;
-  padding-right: 10px;
-}
-
-/*.info {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  margin-top: 4px;
-  margin-left: 2px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  background-image: url("../images/info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-
-/* Field */
-.field {
-  margin: 0;
-  padding: 12px 20px;
-  /*width: 440px;*/
-  font: inherit;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-.modal-humans {
-  margin-right: 46px;
-}
-
-.children {
-  line-height: 20px;
-  background-color: #333333;
-  color: #FFFFFF;
-  /*text-decoration: none;*/
-}
-
-.modal-submit {
-  grid-column: 1 / -1;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-/* Hover, Focus */
-.field:hover {
-  background-color: #E6E6E6;
-}
-
-.field:focus {
-  background-color: #E6E6E6;
-  outline: 4px solid #83B3D3;
-}
-
-.field:active {
-  background-color: #F2F2F2;
-  outline: 2px solid #000000;
-}
-
-.modal-submit:hover {
-  background-color: #68A2CA;
-}
-
-.modal-submit:focus {
-  background-color: #68A2CA;
-}
-
 /*catalog*/
 .main-sorting-catalog {
   padding: 70px;
@@ -969,7 +807,17 @@ body {
 }
 
 .range-input-right {
+  margin-left: 2px;
   border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label .range-min-price,
+.catalog-filter-label .range-max-price {
+  position: relative;
+  top: -36px;
+  right: -106px;
+  line-height: 24px;
+  color: rgb(133, 133, 133);
 }
 
 .range-input::-webkit-outer-spin-button,
