@@ -84,6 +84,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .clear-list {
@@ -123,7 +124,6 @@ body {
 }
 
 .navigation-link {
-  display: flex;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
@@ -161,7 +161,10 @@ body {
 
 .menu-link {
   display: flex;
-  padding: 22px 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 3px;
+  /*padding: 1px 12px;*/
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -175,6 +178,27 @@ body {
 .menu-link .menu-list {
   min-width: 20px;
   min-height: 20px;
+}
+
+.menu-list .menu-link-heart::before {
+  position: relative;
+  top: -11px;
+  left: 29px;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  content: "";
+}
+
+.menu-list .menu-favourites {
+  position: relative;
+  top: -6px;
+  right: 7px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+
 }
 
 .menu-login-button {
@@ -224,17 +248,23 @@ body {
 .hero {
   display: block;
   background-image: url("../images/mountain-background.jpg");
-  background-color: #333333;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #333333;
   padding-top: 51px;
-  padding-bottom: 82px;
 }
 
 .hero-logo-welcome {
   display: block;
   margin: 0 auto;
+}
+
+.hero-diadonals {
+  background-image: url("../images/diagonals.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 82px;
 }
 
 /*advantages*/
@@ -426,8 +456,7 @@ body {
   color: #FFFFFF;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 96px;
   padding-bottom: 104px;
@@ -591,7 +620,7 @@ body {
   background-image: url("../images/sorting-background.jpg");
   background-color: #F2F2F2;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
@@ -610,23 +639,26 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  align-items: center;
   width: 600px;
 }
 
-.breadcrumbs-item {
-  display: flex;
-  align-items: center;
+.breadcrumbs-item:not(:first-child) {
+  background-image: url("../images/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 10px;
 }
 
 .breadcrumbs-link {
-  display: flex;
   font-size: 16px;
   color: inherit;
   text-decoration: none;
-  margin-right: 10px;
-  padding-left: 10px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin-right: 13px;
+  margin-left: 10px;
 }
 
 .breadcrumbs-link:hover {
@@ -673,16 +705,179 @@ body {
 }
 
 .catalog-filter-item {
-  line-height: 23px;
-  margin-bottom: 16px;
+  line-height: 24px;
 }
 
-.catalog-filter-item:nth-child(3n) {
-  margin-bottom: 0;
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter-range {
   margin-left: 70px;
+}
+
+/*control*/
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled + .control-mark {
+  outline: #FFFFFF;
+}
+
+.control:hover .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background-image: url("../images/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #3F5E72;
+  top: 6px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+  content: "";
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+/* Range */
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-input {
+  width: 103px;
+  color: #000000;
+  appearance: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  font-family: inherit;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+}
+
+.range-input-right {
+  margin-left: 2px;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label .range-min-price,
+.catalog-filter-label .range-max-price {
+  position: relative;
+  top: -36px;
+  right: -106px;
+  line-height: 24px;
+  color: rgb(133, 133, 133);
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.range-input:active {
+  outline: 2px solid #000000;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 44px;
+  background-color: rgb(133, 133, 133);
+}
+
+.range-bar {
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
 }
 
 .catalog-button {
@@ -765,6 +960,12 @@ body {
   border: none;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  padding: 14px 20px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -947,18 +1148,20 @@ body {
   display: flex;
   margin-top: 40px;
   order: 2;
+
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+
 }
 
 .pagination-link {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   box-sizing: border-box;
   width: 60px;
-  padding: 12px 22px;
+  height: 60px;
+  padding-top: 12px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
