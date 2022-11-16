@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -85,6 +86,10 @@ body {
   width: 1200px;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .clear-list {
@@ -164,7 +169,6 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 3px;
-  /*padding: 1px 12px;*/
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -957,11 +961,10 @@ body {
   line-height: 21px;
   box-shadow: none;
   width: 292px;
-  border: none;
-  outline: 2px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
-  padding: 14px 20px;
+  padding: 12px 20px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
@@ -969,19 +972,20 @@ body {
 }
 
 .select-control:hover {
-  outline-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .select-control:focus {
-  outline-color: #68A2CA;
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .select-control:active {
-  outline-color: #3F5E72;
+  border-color: #3F5E72;
 }
 
 .select-control:disabled {
-  outline-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-buttons {
@@ -995,10 +999,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   margin-right: 8px;
-  outline: 2px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
@@ -1007,19 +1011,20 @@ body {
 }
 
 .card-grid-toggle:hover {
-  outline-color: #000000;
+  border-color: #000000;
 }
 
 .card-grid-toggle:focus {
-  outline-color: #68A2CA;
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .card-grid-toggle:active {
-  outline-color: #000000;
+  border-color: #000000;
 }
 
 .card-grid-toggle-current {
-  outline-color: #000000;
+  border-color: #000000;
 }
 
 /*hotel-card*/
@@ -1034,7 +1039,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  outline: 1px solid #E6E6E6;
+  border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
