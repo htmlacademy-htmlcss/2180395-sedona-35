@@ -846,7 +846,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 21px;
+  margin-top: 19px;
   background-color: rgb(133, 133, 133);
 }
 
@@ -875,13 +875,13 @@ body {
 }
 
 .toggle-min {
-  top: -8px;
-  left: -8px;
+  top: -9px;
+  left: -7px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -8px;
+  top: -9px;
+  right: -9px;
 }
 
 .catalog-button {
