@@ -44,6 +44,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   margin: 0;
   font-size: 16px;
@@ -86,7 +87,6 @@ body {
   width: 1200px;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  /*display: flex;*/
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
@@ -166,9 +166,7 @@ body {
 
 .menu-link {
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 3px;
+  padding: 22px 12px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -184,26 +182,26 @@ body {
   min-height: 20px;
 }
 
-.menu-list .menu-link-heart::before {
+.menu-favourites {
   position: relative;
   top: -11px;
-  left: 29px;
+  right: 12px;
+  font-size: 10px;
+  line-height: 10px;
+  min-width: 12px;
+}
+
+.menu-list .menu-favourites::before {
+  position: relative;
   min-width: 20px;
   height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
-  content: "";
-}
-
-.menu-list .menu-favourites {
-  position: relative;
-  top: -6px;
-  right: 7px;
+  content: "12";
   color: #FFFFFF;
-  font-size: 10px;
-  line-height: 10px;
-  min-width: 12px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-login-button {
@@ -218,7 +216,7 @@ body {
 }
 
 .menu-item-button {
-  margin-left: 20px;
+  margin-left: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,6 +291,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #333333;
+  letter-spacing: 0.05em;
 }
 
 .advantages-list {
@@ -390,7 +389,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 80px;
-  padding-bottom: 85px;
+  padding-bottom: 81px;
   align-items: center;
 }
 
@@ -812,7 +811,7 @@ body {
 }
 
 .range-input-right {
-  margin-left: 2px;
+  margin-left: 3px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -941,7 +940,7 @@ body {
 .select-hotels-sorting {
   display: flex;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   justify-content: space-between;
 }
 
@@ -1032,7 +1031,7 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 17px;
   margin-bottom: 40px;
 }
 
@@ -1129,6 +1128,7 @@ body {
   width: 72px;
   max-height: 16px;
   background-image: url("../images/star.svg");
+  word-spacing: 5em;
 }
 
 .rating-star-three {
