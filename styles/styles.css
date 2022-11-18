@@ -86,7 +86,7 @@ body {
   width: 1200px;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
+  /*display: flex;*/
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
@@ -188,7 +188,7 @@ body {
   position: relative;
   top: -11px;
   left: 29px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
@@ -202,7 +202,8 @@ body {
   color: #FFFFFF;
   font-size: 10px;
   line-height: 10px;
-
+  min-width: 12px;
+  text-align: center;
 }
 
 .menu-login-button {
@@ -250,7 +251,6 @@ body {
 }
 
 .hero {
-  display: block;
   background-image: url("../images/mountain-background.jpg");
   background-position: center;
   background-size: cover;
@@ -265,6 +265,7 @@ body {
 }
 
 .hero-diadonals {
+  display: block;
   background-image: url("../images/diagonals.svg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -494,7 +495,7 @@ body {
 
 .newsletter-field {
   margin: 0;
-  width: 452px;
+  width: 412px;
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
@@ -846,7 +847,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 44px;
+  margin-top: 21px;
   background-color: rgb(133, 133, 133);
 }
 
@@ -1126,6 +1127,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 72px;
+  max-height: 16px;
   background-image: url("../images/star.svg");
 }
 
@@ -1153,20 +1155,18 @@ body {
   display: flex;
   margin-top: 40px;
   order: 2;
-
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
-
 }
 
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
-  padding-top: 12px;
+  padding: 12px 12px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
