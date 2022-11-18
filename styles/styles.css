@@ -1128,7 +1128,6 @@ body {
   width: 72px;
   max-height: 16px;
   background-image: url("../images/star.svg");
-  word-spacing: 5em;
 }
 
 .rating-star-three {
